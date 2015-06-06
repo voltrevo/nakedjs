@@ -20,7 +20,6 @@
   "author": "Andrew Morris",
   "license": "MIT",
   "dependencies": {
-    "browserify": "^10.2.3",
-    "express": "^4.12.4"
+    "browserify": "^10.2.3"
   }
 }
