@@ -17,8 +17,8 @@ Visit http://localhost:8080/
 ```
 'use strict'
 
-var nakedjs = require('nakedjs')
 var http = require('http')
+var nakedjs = require('nakedjs')
 
 http
   .createServer(nakedjs('path/to/file.js'))
@@ -31,8 +31,7 @@ Or with express:
 'use strict'
 
 var express = require('express')
-
-var nakedjs = require('..')
+var nakedjs = require('nakedjs')
 
 var app = express()
 
