@@ -12,6 +12,10 @@
     "express",
     "browserify"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voltrevo/nakedjs.git"
+  },
   "author": "Andrew Morris",
   "license": "MIT",
   "dependencies": {
