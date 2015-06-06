@@ -15,6 +15,8 @@ Visit http://localhost:8080/
 `npm install --save nakedjs`
 
 ```
+'use strict'
+
 var nakedjs = require('nakedjs')
 var http = require('http')
 
