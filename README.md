@@ -5,18 +5,18 @@ What do we need that html around our JavaScript for? ;-).
 
 # CLI
 ```
-// page.js
+npm install -g nakedjs
+nakedjs page.js
+```
+
+```
+// example page.js
 
 'use strict'
 
 window.addEventListener('load', function() {
   document.body.innerHTML = 'Hello world!'
 })
-```
-
-```
-npm install -g nakedjs
-nakedjs page.js
 ```
 
 Visit [http://localhost:8080/](http://localhost:8080/)
