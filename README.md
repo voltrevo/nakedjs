@@ -3,17 +3,25 @@ Runs js files through browserify and adds html boilerplate.
 
 What do we need that html around our JavaScript for? ;-).
 
-# Try it out!
+# CLI
 ```
-git checkout git@github.com:voltrevo/nakedjs.git
-cd nakedjs
-npm install
-node src/demo/index.js
+// page.js
+
+'use strict'
+
+window.addEventListener('load', function() {
+  document.body.innerHTML = 'Hello world!'
+})
 ```
 
-Visit http://localhost:8080/
+```
+npm install -g nakedjs
+nakedjs page.js
+```
 
-# Basic Usage
+Visit [http://localhost:8080/](http://localhost:8080/)
+
+# API
 `npm install --save nakedjs`
 
 ```
