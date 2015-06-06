@@ -20,6 +20,7 @@
   "author": "Andrew Morris",
   "license": "MIT",
   "dependencies": {
-    "browserify": "^10.2.3"
+    "browserify": "^10.2.3",
+    "html2jsify": "0.0.2"
   }
 }
