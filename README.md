@@ -5,6 +5,8 @@ What do we need that html around our JavaScript for? ;-).
 
 # Try it out!
 ```
+git checkout git@github.com:voltrevo/nakedjs.git
+cd nakedjs
 npm install
 node demo/index.js
 ```
