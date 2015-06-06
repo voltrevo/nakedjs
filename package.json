@@ -2,10 +2,10 @@
   "name": "nakedjs",
   "version": "0.0.2",
   "description": "Runs js files through browserify and adds html boilerplate.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "demo": "node demo/index.js"
+    "demo": "node src/demo/index.js"
   },
   "keywords": [
     "js",
@@ -16,6 +16,7 @@
     "type": "git",
     "url": "https://github.com/voltrevo/nakedjs.git"
   },
+  "bin": "src/cli.js",
   "author": "Andrew Morris",
   "license": "MIT",
   "dependencies": {

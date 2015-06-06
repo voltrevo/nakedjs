@@ -8,7 +8,7 @@ What do we need that html around our JavaScript for? ;-).
 git checkout git@github.com:voltrevo/nakedjs.git
 cd nakedjs
 npm install
-node demo/index.js
+node src/demo/index.js
 ```
 
 Visit http://localhost:8080/
@@ -24,7 +24,7 @@ var nakedjs = require('nakedjs')
 
 http
   .createServer(nakedjs('path/to/file.js'))
-  .listen(8080, '127.0.0.1')
+  .listen(8080)
 ```
 
 Or with express:
