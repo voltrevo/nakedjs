@@ -1,6 +1,6 @@
 {
   "name": "nakedjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Runs js files through browserify and adds html boilerplate.",
   "main": "src/index.js",
   "scripts": {
