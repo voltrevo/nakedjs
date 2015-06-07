@@ -111,6 +111,7 @@ window.addEventListener('load', function() {
 ```
 
 `npm install html2jsify cssify`
+
 `nakedjs page.js`
 
 Now visit [http://localhost:8080/](http://localhost:8080/)
