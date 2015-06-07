@@ -114,6 +114,33 @@ window.addEventListener('load', function() {
 
 `nakedjs page.js`
 
-Now visit [http://localhost:8080/](http://localhost:8080/)
+Visit [http://localhost:8080/](http://localhost:8080/)
 
 (You should probably fill out the rest of your package.json, possibly using `npm init`, but this stripped down version works too if you want to quickly hack this together.)
+
+# nakedcoffee
+
+Like [coffeescript](http://coffeescript.org/)? Why not use the approach above to serve up naked coffee?
+
+Add this to package.json:
+
+```
+"browserify": {
+  "transform": [
+    "coffeeify"
+  ]
+},
+```
+
+`npm install --save coffeeify`
+
+```
+// page.coffee
+
+window.addEventListener 'load', ->
+  document.body.innerHTML = 'Hello world!'
+```
+
+`nakedjs page.coffee`
+
+Visit [http://localhost:8080/](http://localhost:8080/)
