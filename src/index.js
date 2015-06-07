@@ -1,8 +1,6 @@
 'use strict'
 
 var browserify = require('browserify')
-var cssify = require('cssify')
-var html2jsify = require('html2jsify')
 
 module.exports = function(path, lang) {
   lang = lang || 'en'
@@ -15,12 +13,7 @@ module.exports = function(path, lang) {
       '<html lang=\'' + lang + '\'><head><meta charset=\'utf-8\'><title></title><script>\n'
     )
 
-    var browserifyStream = (browserify([], {debug: true})
-      .transform(html2jsify)
-      .transform(cssify)
-      .add(path)
-      .bundle()
-    )
+    var browserifyStream = browserify([], {debug: true}).add(path).bundle()
 
     browserifyStream.on('data', function(data) {
       res.write(data)
