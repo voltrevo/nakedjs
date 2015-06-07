@@ -62,6 +62,8 @@ nakedjs is about putting JavaScript first. So if you want to use html and css to
 },
 ```
 
+and run `npm install --save html2jsify cssify`.
+
 Then you can write something like this:
 
 ```
@@ -99,8 +101,6 @@ window.addEventListener('load', function() {
 // package.json
 
 {
-  // You should probably fill out the rest of your package.json, possibly using `npm init`,
-  // but this stripped down version works too if you want to quickly hack this together.
   "browserify": {
     "transform": [
       "html2jsify",
@@ -110,6 +110,9 @@ window.addEventListener('load', function() {
 }
 ```
 
+`npm install html2jsify cssify`
 `nakedjs page.js`
 
 Now visit [http://localhost:8080/](http://localhost:8080/)
+
+(You should probably fill out the rest of your package.json, possibly using `npm init`, but this stripped down version works too if you want to quickly hack this together.)
