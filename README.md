@@ -110,7 +110,7 @@ window.addEventListener('load', function() {
 }
 ```
 
-`npm install html2jsify cssify`
+`npm install --save html2jsify cssify`
 
 `nakedjs page.js`
 
