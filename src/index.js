@@ -9,8 +9,8 @@ module.exports = function(path, lang) {
     res.writeHead(200, {'Content-Type': 'text/html'})
 
     res.write(
-      '<!DOCTYPE html>\n' +
-      '<html lang=\'' + lang + '\'><head><meta charset=\'utf-8\'><title></title><script>\n'
+      '<!DOCTYPE html>' +
+      '<html lang=\'' + lang + '\'><head><meta charset=\'utf-8\'><title></title><script>'
     )
 
     var browserifyStream = browserify([], {debug: true}).add(path).bundle()
