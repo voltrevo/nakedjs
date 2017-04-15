@@ -4,12 +4,12 @@ Runs js files through browserify and adds html boilerplate.
 What do we need that html around our JavaScript for? ;-).
 
 # CLI
-```
+```sh
 npm install -g nakedjs
 nakedjs page.js
 ```
 
-```
+```js
 // example page.js
 
 'use strict'
@@ -24,7 +24,7 @@ Visit [http://localhost:8080/](http://localhost:8080/)
 # API
 `npm install --save nakedjs`
 
-```
+```js
 'use strict'
 
 var http = require('http')
@@ -37,7 +37,7 @@ http
 
 Or with express:
 
-```
+```js
 'use strict'
 
 var express = require('express')
@@ -53,7 +53,7 @@ app.listen(8080)
 
 nakedjs is about putting JavaScript first. So if you want to use html and css too, just reverse the traditional process by pulling in everything from JavaScript instead of html. I take my hat off to [browserify](https://www.npmjs.com/package/browserify) for their elegant solution that makes this super-easy. There's no need to pass transforms to browserify explicitly, because it'll read the ones your package needs in package.json. Nothing stands in the way of this process when you run nakedjs, so I highly recommend you use [html2jsify](https://www.npmjs.com/package/html2jsify) and [cssify](https://www.npmjs.com/package/cssify) by adding this field to your package.json:
 
-```
+```json
 "browserify": {
   "transform": [
     "html2jsify",
@@ -66,13 +66,13 @@ and run `npm install --save html2jsify cssify`.
 
 Then you can write something like this:
 
-```
+```html
 // circle.html
 
 <div class='circle'></div>
 ```
 
-```
+```css
 // circle.css
 
 .circle {
@@ -83,7 +83,7 @@ Then you can write something like this:
 }
 ```
 
-```
+```js
 // page.js
 
 'use strict'
@@ -97,7 +97,7 @@ window.addEventListener('load', function() {
 })
 ```
 
-```
+```json
 // package.json
 
 {
@@ -124,7 +124,7 @@ Like [coffeescript](http://coffeescript.org/)? Why not use the approach above to
 
 Add this to package.json:
 
-```
+```json
 "browserify": {
   "transform": [
     "coffeeify"
@@ -134,7 +134,7 @@ Add this to package.json:
 
 `npm install --save coffeeify`
 
-```
+```coffee
 // page.coffee
 
 window.addEventListener 'load', ->
